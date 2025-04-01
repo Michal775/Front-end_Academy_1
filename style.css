@@ -1,0 +1,420 @@
+:root {
+  --primary-color: #33292a;
+  --secondary-color: #644b4f;
+  --white-bg: #f2f2f2;
+  --primary-font: #000;
+  --secondary-font: #fff;
+  --footer-bg: #333333;
+  --url-font: #efa69d;
+  --url-hover: #e9877b;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: var(--primary-font);
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  scroll-margin-top: 55px;
+  padding: 30px 0;
+}
+
+h2 {
+  padding-bottom: 30px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+p {
+  font-weight: 400;
+}
+
+/* NAVIGATION */
+.navigation {
+  background-color: var(--primary-color);
+  color: var(--secondary-font);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.navigation-list {
+  display: none;
+  justify-content: space-between;
+  list-style: none;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.navigation-item {
+  padding: 16px 0;
+}
+
+.navigation-item a {
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--secondary-font);
+}
+
+.navigation-item a:hover {
+  color: var(--url-hover);
+}
+
+.navigation-icon-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px;
+}
+
+.navigation-icon {
+  cursor: pointer;
+  width: 22px;
+}
+
+@media (min-width: 768px) {
+  .navigation-list {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+  }
+
+  .navigation-icon-wrapper {
+    display: none;
+  }
+}
+
+/* HERO SECTION */
+.hero {
+  background-image: url("./images/scott-goodwill-y8Ngwq34_Ak-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.hero-wrapper {
+  height: 100%;
+  width: 85%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.hero-text {
+  position: absolute;
+  color: var(--secondary-font);
+  bottom: 30px;
+  right: 0px;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: right;
+}
+
+@media (min-width: 768px) {
+  .hero-wrapper {
+    width: 70%;
+  }
+
+  .hero-text {
+    font-size: 96px;
+  }
+}
+
+/* About Us */
+.aboutus-wrapper {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.aboutus-text {
+  flex: 1;
+  padding: 40px 0;
+  text-align: left;
+}
+
+.aboutus-image {
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .aboutus-wrapper {
+    display: flex;
+    width: 70%;
+    padding: 40px 0;
+  }
+
+  .aboutus-text {
+    padding: 0;
+  }
+
+  .aboutus-image {
+    padding-left: 40px;
+  }
+
+  .aboutus-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/* What We Do */
+.whatwedo {
+  background-color: var(--primary-color);
+  color: var(--secondary-font);
+}
+
+.whatwedo-wrapper {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.whatwedo-text {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.whatwedo-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.whatwedo-icon {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+
+.whatwedo-icon-text {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 24px;
+  width: 100px;
+  align-self: center;
+}
+
+@media (min-width: 768px) {
+  .whatwedo-wrapper {
+    width: 70%;
+    padding: 40px 0;
+  }
+  .whatwedo-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 10px;
+  }
+}
+
+/* Trips */
+.trips {
+  color: var(--primary-font);
+}
+
+.trips-wrapper {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.trips img {
+  border-radius: 5px;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.trips-text {
+  background-color: var(--white-bg);
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: 5px;
+}
+
+@media (min-width: 768px) {
+  .trips-wrapper {
+    width: 70%;
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+  }
+
+  .trips-image {
+    grid-area: auto;
+  }
+
+  .trips-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Contact */
+.contact {
+  background-color: var(--secondary-color);
+  color: var(--secondary-font);
+  padding: 50px 0;
+}
+
+.contact-wrapper {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.contact-btn {
+  display: inline-block;
+  padding: 14px;
+  background-color: var(--white-bg);
+  color: var(--primary-font);
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 14px;
+  height: 43px;
+  width: 133px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .contact-wrapper {
+    width: 70%;
+    display: flex;
+    padding: 40px 0;
+  }
+
+  .contact-left-block {
+    width: 30%;
+  }
+
+  .contact-right-block {
+    width: 70%;
+    padding-left: 50px;
+  }
+}
+
+/* Reviews */
+.reviews-wrapper {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.reviews-text {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.reviews-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.reviews-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews-card img {
+  border-radius: 50%;
+  width: 111px;
+  height: 111px;
+  object-fit: cover;
+}
+
+.reviews-card-text {
+  text-align: center;
+  padding: 30px 0;
+}
+
+@media (min-width: 768px) {
+  .reviews-wrapper {
+    width: 70%;
+    padding: 40px 0;
+  }
+
+  .reviews-text {
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .reviews-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .reviews-card {
+    width: 45%;
+  }
+}
+
+/* Gallery */
+.gallery-images img {
+  display: block;
+}
+
+.gallery {
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .gallery-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+
+  .gallery-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/* Footer */
+.footer {
+  background-color: var(--footer-bg);
+  color: var(--secondary-font);
+  height: 94px;
+}
+
+.footer-wrapper {
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.footer-link a {
+  color: var(--url-font);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.footer-link a:hover {
+  color: var(--url-hover);
+}
+
+.footer-text {
+  font-size: 10px;
+}
