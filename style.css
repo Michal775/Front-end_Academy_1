@@ -286,6 +286,7 @@ p {
     width: 70%;
     display: flex;
     padding: 40px 0;
+    gap: 40px;
   }
 
   .contact-left-block {
@@ -294,7 +295,6 @@ p {
 
   .contact-right-block {
     width: 70%;
-    gap: 50px;
   }
 }
 
