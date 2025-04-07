@@ -151,14 +151,11 @@ p {
     display: flex;
     width: 70%;
     padding: 40px 0;
+    gap: 40px;
   }
 
   .aboutus-text {
     padding: 0;
-  }
-
-  .aboutus-image {
-    padding-left: 40px;
   }
 
   .aboutus-image img {
@@ -193,7 +190,6 @@ p {
 
 .whatwedo-icon {
   width: 80px;
-  height: 80px;
   display: flex;
   flex-direction: column;
   margin-bottom: 80px;
@@ -254,10 +250,6 @@ p {
     gap: 20px;
   }
 
-  .trips-image {
-    grid-area: auto;
-  }
-
   .trips-text {
     display: flex;
     align-items: center;
@@ -286,10 +278,7 @@ p {
   border-radius: 5px;
   font-weight: 700;
   font-size: 14px;
-  height: 43px;
-  width: 133px;
   margin-top: 40px;
-  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -305,7 +294,7 @@ p {
 
   .contact-right-block {
     width: 70%;
-    padding-left: 50px;
+    gap: 50px;
   }
 }
 
